@@ -2,29 +2,29 @@
 
 body {
 	background-color:#fff;
-	/* background-image:url(../images/backgrounds/body.gif); */
 	background-position:center;
-/*	background-repeat:repeat-y;*/
 	font-family: "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
-	font-size:10px;
+	font-size:16px;
 	color:#777;
 }
+
 #container {
-	width:700px;
+	width:750px;
 	margin:0 auto;
 }
 
 #header {
-	background-color:#eeeeee;
-	margin:10px;
-	padding:30px 10px 30px 10px;
-	border-top:2px solid #ccc;
+	/*background-color:#eeeeee;*/
+	margin:10px 10px 10px 10px;
+	padding:30px 20px 30px 20px;
+	border-top:4px solid #ccc;
+	/*border-bottom:2px solid #ccc;*/
 }
 
 #header h1 {
 	text-align:center;
 	font-family:Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
-	font-size:30px;
+	font-size:25px;
 	color:#333;
 	margin:0;
 	font-weight:normal;
@@ -37,7 +37,7 @@ body {
 	text-decoration:none;
 }
 #header h2 {
-	font-size:11px;
+	font-size:18px;
 	font-weight:normal;
 	text-align:center;
 	color:#999;
@@ -55,12 +55,14 @@ body {
 #header li a {
 	display:block;
 	padding:7px;
-	color:#999;
+	color:#333;
 	text-decoration:none;
-	border-bottom:5px solid #fff;
+	border-bottom:10px solid #fff;
 	margin:0 10px 0 0;
-	font-size:10px;
+	font-size:16px;
+	text-decoration: underline;
 }
+
 #header li a:hover {
 	color:#000;
 	border-bottom:7px solid #fff;
@@ -94,6 +96,31 @@ body {
 }
 */
 
+
+/* tell the container's children to float left: */
+.float-my-children > * {
+    float:left;
+    margin-right:60px;
+}
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* end clearfix*/
+
+
 ul.submenu {
 	margin:0;
 	padding:0;
@@ -105,16 +132,15 @@ ul.submenu {
 }
 .submenu a {
 	display:block;
+	font-size: 20px;
 	height:13px;
 	padding:7px 7px 7px 17px;
 	margin:1px 0 0 0;
 	background-color:#fff;
-	/* background-image:url(../images/backgrounds/submenua_normal.jpg); */
 	background-position:left;
 	background-repeat:repeat-y;
 }
 .submenu a:hover {
-	/*  background-image:url(../images/backgrounds/submenua.jpg); */
 	background-position:bottom;
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -128,7 +154,6 @@ ul.submenu {
 	padding:7px 7px 7px 15px;
 }
 .submenu a:active {
-	/* background-image:url(../images/backgrounds/submenua.jpg); */
 	background-position:bottom;
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -145,12 +170,13 @@ ul.submenu {
 
 #content {
 	margin:10px 10px 10px 10px;
+	line-height: 140%
 }
 
 #content h1 {
 	font-family:Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
-	font-size:14px;
-	border-bottom:1px solid #eee;
+	font-size:16px;
+	border-bottom:1px solid #ccc;
 	padding:5px;
 	color:#000;
 }
@@ -167,14 +193,14 @@ ul.submenu {
 	/* background-image:url(../images/backgrounds/h1_hover.png); */
 }
 #content h2 {
-	font-size:11px;
-	color:#ccc;
-	margin:10px 0 10px 0;
+	font-size:16px;
+	color:#666;
+/*	margin:10px 0 10px 0;
 	padding:5px;
-}
+*/}
 #content p {
 	padding:5px;
-	line-height:18px;
+	line-height:140%;
 	word-spacing: 0.1em;
 }
 #content .article_menu {
