@@ -4,7 +4,7 @@ body {
 	background-color:#fff;
 	background-position:center;
 	font-family: "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
-	font-size:1.5em;
+	font-size:1.1em;
 	color:#777;
 }
 
@@ -28,7 +28,7 @@ body {
     height:1.5em;
 	margin:1em 2em 1em 2em;
 	padding:0 3em 0em 3em;
-	border-bottom:0.2em solid #ccc;
+	border-bottom:0.2em solid #999999;
 }
 #header h1 {
 	text-align:center;
