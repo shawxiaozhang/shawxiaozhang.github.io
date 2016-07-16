@@ -8,22 +8,31 @@ body {
 	color:#777;
 }
 
+​.header
+{
+}
+
+.content
+{
+    position:absolute;
+    top: 3em;
+	bottom:0em;
+    overflow-y:scroll;        
+}​
+
 #container {
-	width:30em;
-	margin:0 auto;
 }
 
 #header {
-	/*background-color:#eeeeee;*/
-	margin:0.9em 0.9em 0.9em 0.9em;
-	padding:2em 2em 2em 2em;
-	border-top:0.2em solid #ccc;
-	/*border-bottom:2px solid #ccc;*/
+	background-color:#ffffff;
+    height:1.5em;
+	margin:1em 2em 1em 2em;
+	padding:0 3em 0em 3em;
+	border-bottom:0.2em solid #ccc;
 }
-
 #header h1 {
 	text-align:center;
-	font-family:Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif, Trebuchet MS, Geneva;
 	font-size:1em;
 	color:#333;
 	margin:0;
@@ -36,14 +45,8 @@ body {
 	color:#333;
 	text-decoration:none;
 }
-#header h2 {
-	font-size:0.8em;
-	font-weight:normal;
-	text-align:center;
-	color:#999;
-}
 #header ul {
-	margin:1.2em 0 0 0;
+	margin:0 0 0 0;
 	padding:0;
 }
 #header li {
@@ -53,54 +56,24 @@ body {
 	float:left;
 }
 #header li a {
-	display:block;
-	padding:0.5em;
-	color:#333;
+	padding:0em;
+	color:#666;
 	text-decoration:none;
-	border-bottom:1em solid #fff;
-	margin:0 0.5em 0 0;
-	font-size:0.75em;
-	text-decoration: underline;
+	margin:0 0.5em 1em 0.5em;
+	font-size:0.8em;
 }
-
 #header li a:hover {
 	color:#000;
-	border-bottom:0.5em solid #fff;
-	padding:5px 7px 7px 7px;
 }
 #header li a em {
 	font-style:normal;
-	text-decoration:underline;
 }
-
-/*
-#sidebar {
-    display:none;
-    float:right;
-	width:0px !important;
-	width:0px;
-	margin:10px 10px 10px 0;
-}
-
-#sidebar h1 {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#000;
-	margin:10px 5px 15px 10px;
-}
-#sidebar p {
-	padding:5px;
-	margin:5px 5px 5px 10px;
-	line-height:17px;
-	word-spacing:-1px;
-}
-*/
-
 
 /* tell the container's children to float left: */
 .float-my-children > * {
     float:left;
-    margin-right:3em;
+    margin-left:8em;
+    margin-right:1em;
 }
 
 /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
@@ -120,138 +93,83 @@ body {
 }
 /* end clearfix*/
 
-
-ul.submenu {
-	margin:0;
-	padding:0;
-}
-.submenu li {
-	marign:0;
-	padding:0;
-	list-style:none;
-}
-.submenu a {
-	display:block;
-	font-size: 2em;
-	height:1.5em;
-	padding:7px 7px 7px 17px;
-	margin:1px 0 0 0;
-	background-color:#fff;
-	background-position:left;
-	background-repeat:repeat-y;
-}
-.submenu a:hover {
-	background-position:bottom;
-	background-repeat:no-repeat;
-	background-color:#fff;
-	padding:7px 7px 7px 15px;
-}
-.submenu a:focus {
-	/* background-image:url(../images/backgrounds/submenua.jpg); */
-	background-position:bottom;
-	background-repeat:no-repeat;
-	background-color:#fff;
-	padding:7px 7px 7px 15px;
-}
-.submenu a:active {
-	background-position:bottom;
-	background-repeat:no-repeat;
-	background-color:#fff;
-	padding:7px 7px 7px 15px;
-}
-
-.note {
-	padding:10px;
-	background-color:#eee;
-	border:1px solid #ccc;
-	margin:20px 5px 20px 5px;
-}
-
-
 #content {
-	margin:0.3em 0.3em 0.3em 0.3em;
+	margin:1em 3em 1em 3em;
 	font-size:0.7em;
 	line-height: 140%
 }
 
 #content h1 {
 	font-family:Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
-	font-size:01em;
-	border-bottom:0.1em solid #ccc;
-	padding:0.3em;
+	font-size:1.2em;
+	padding:1.0em 0em 0em 0.2em;
 	color:#000;
 }
 #content h1 a {
 	color:#000;
 	text-decoration:none;
 	display:block;
-	/* background-image:url(../images/backgrounds/h1.png); */
-	background-position:right;
-	background-repeat:no-repeat;
 }
 #content h1 a:hover {
 	color:#444;
-	/* background-image:url(../images/backgrounds/h1_hover.png); */
 }
 #content h2 {
-	font-size:0.8em;
-	color:#666;
-/*	margin:10px 0 10px 0;
-	padding:5px;
-*/}
+	font-size:1.0em;
+	color:#444444;
+}
+
 #content p {
-	padding:0.2em;
+	/*padding:0.3em;*/
 	line-height:140%;
 	word-spacing: 0.1em;
+	text-align:justify;
+	color:#444444;
 }
-#content .article_menu {
-	text-align:right;
-	padding:0.2em;
-	margin:0.4em 0 0.8em 0;
-	border-top:0.1em solid #eee;
-}
-#content .article_menu b {
-	float:left;
-	font-weight:normal;
-}
-#content .article_menu a {
-	padding:0 0 0 15px;
-	/* background-image:url(../images/backgrounds/comment.png); */
-	background-position:left;
-	background-repeat:no-repeat;
-	color:#333;
-	text-decoration:none;
-}
+
 #content p a {
-	color:#333;
+	color:#3366BB;
 	text-decoration:none;
 }
 
-#content p:hover a {
-	border-bottom:1px dotted #000;
+#content p a:hover{
+	text-decoration:underline;
+	/*border-bottom:1px solid #000;*/
 }
-#content p:hover a:hover {
-	border-bottom:1px solid #000;
-}
-#content .article_menu a:hover {	
-	color:#000;
-	/* background-image:url(../images/backgrounds/comment_hover.png); */
-}
+
 #content ul {
-	margin:0 0 0 1em;
-	padding:0;
-	border-top:0.1em solid #f6f6f6;
+	/*padding:0.3em;*/
+	line-height:140%;
+	word-spacing: 0.1em;
+	text-align:justify;
+	color:#444444;
 }
-#content li {
+
+#content li em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+#content li a {
+	color:#3366BB;
+	text-decoration:none;
+}
+
+#content li a:hover{
+	text-decoration:underline;
+}
+
+/*#content li {
 	margin:0.1em 0 0.1em 0;
 	border-bottom:0.1em solid #f6f6f6;
 	padding:0 0 0.1em 0.1em;
 	list-style:none;
-	/* background-image:url(../images/backgrounds/arrow.png); */
+	 background-image:url(../images/backgrounds/arrow.png); 
 	background-position:top left;
 	background-repeat:no-repeat;
 	color:#999;
-}
+}*/
+
 #content blockquote {
 	background-color:#f6f6f6;
 	margin:4px;
@@ -263,32 +181,7 @@ ul.submenu {
 	marign:0;
 	padding:0 10px 0 10px;
 }
-.comment_odd {
-	background-color:#f6f6f6;
-	padding:10px;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #eee;
-}
-.comment_even {
-	padding:10px;
-	background-color:#fcfcfc;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #eee;
-}
-.comnum {
-	float:right;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:25px;
-	color:#ccc;
-}
-input, textarea {
-	background-color:#fff;
-	border:1px solid #ccc;
-	padding:3px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
-	color:#777;
-}
+
 #footer {
 	background-color:#eee;
 	border-top:2px solid #ccc;
