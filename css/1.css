@@ -17,6 +17,7 @@ body {
     position:absolute;
     top: 3em;
 	bottom:0em;
+    right: -1px; /* Increase/Decrease this value for cross-browser compatibility */
     overflow-y:scroll;        
 }​
 
